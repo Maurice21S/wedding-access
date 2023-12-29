@@ -35,7 +35,7 @@ function main() {
 
     // Check that all required parameters encoded in the URL are present
     if (!("v" in params && "e" in params)) {
-      error("The link appears corrupted. The encoded URL is missing necessary parameters.");
+      error("Fehlerhafte URL.");
       return;
     }
 
@@ -78,11 +78,11 @@ function main() {
 
         // Set the "decrypt without redirect" URL appropriately
         document.querySelector("#no-redirect").href =
-          `https://jstrieb.github.io/link-lock/decrypt/#${hash}`;
+          `https://maurice21s.github.io/wedding-access/decrypt/#${hash}`;
 
         // Set the "create hidden bookmark" URL appropriately
         document.querySelector("#hidden").href =
-          `https://jstrieb.github.io/link-lock/hidden/#${hash}`;
+          `https://maurice21s.github.io/wedding-access/hidden/#${hash}`;
         return;
       }
 
